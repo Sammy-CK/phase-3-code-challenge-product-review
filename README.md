@@ -11,7 +11,7 @@ Product - User is a many-to-many relationship.
 ## Entity Relationship Diagram(ERD)
 <img src="relationship.png">
 
-This project has three tables with the reviews tabla acting as the join table for the products and users table.
+This project has three tables with the reviews table acting as the join table for the products and users table.
 
 - products table: Has a many-to-many relationship with the users table
 - reviews table: Has a one-to-many relationship with the users table and the products table with products through reviews having many users and vice versa
@@ -78,6 +78,14 @@ Running the application is very straight forward. You can use the following step
 -   Install required dependancies
         
         bundle install
+
+-   Migrate the tables onto the database
+
+        bundle exec rake db:migrate
+
+-   Seed in the data from the Seed file
+
+        bundle exec rake db:seed
 
 - Run the application on the terminal
 
