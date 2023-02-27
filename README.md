@@ -87,6 +87,8 @@ Running the application is very straight forward. You can use the following step
 
         bundle exec rake db:seed
 
+-   Uncomment necessary code in the run file
+
 - Run the application on the terminal
 
       ruby bin/run.rb
